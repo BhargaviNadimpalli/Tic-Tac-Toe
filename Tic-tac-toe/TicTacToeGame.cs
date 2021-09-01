@@ -20,21 +20,24 @@ namespace Tic_tac_toe
         public void ChooseOption()
         {
             Console.Write("Choose X or O : ");
-
+            
             char input = char.Parse(Console.ReadLine());
-            //if player selects X
+            //if player selects O
             if (input == 'X')
             {
-                player = 'X';
+
+                computer = 'O';
+                Console.WriteLine("Computer"+computer);
             }
-            //if player selects O
+            //if player selects X
             else if (input == 'O')
             {
-                computer = 'O';
+                computer = 'X';
+                Console.WriteLine("Computer"+ computer);
             }
             else
             {
-                Console.WriteLine("Invalid player input");
+                Console.WriteLine("Invalid letter");
             }
         }
     }
